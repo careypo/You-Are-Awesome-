@@ -37,6 +37,7 @@ class ViewController: UIViewController {
             index = 0
         } else {
             index += 1
+            
         }
         
         
