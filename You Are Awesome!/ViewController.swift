@@ -31,14 +31,27 @@ class ViewController: UIViewController {
                         "Hey fabulous!",
                         "You Are tremendous!"]
         
+        var newIndex  = -1
+        
+        repeat {
+            newIndex = Int.random(in: 0..<messages.count)
+            
+        } while index == newIndex
+        
+        index = newIndex
         messageLabel.text = messages[index]
         
-        if index == messages.count-1 {
-            index = 0
-        } else {
-            index += 1
-            
-        }
+//        messageLabel.text = messages.randomElement()!
+//
+        
+//        messageLabel.text = messages[index]
+//
+//        if index == messages.count-1 {
+//            index = 0
+//        } else {
+//            index += 1
+//
+//        }
         
     
         
